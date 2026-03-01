@@ -4,5 +4,8 @@ stages:
     deps:
       - data/raw/bank-additional-full.csv
       - src/data_visualization.py
-    outs:
-      - docs/figures
+  test_data_quality:
+    cmd: pytest test/test_data_quality.py
+    deps:
+      - test/test_data_quality.py
+      - data/raw/bank-additional-full.csv

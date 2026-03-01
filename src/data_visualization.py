@@ -20,7 +20,7 @@ def visualizar_datos(
     # Configuración visual
     sns.set(style="whitegrid")
 
-    # Paths robustos (clave para Windows + DVC)
+    # Paths robustos (ajuste para evitar errores Windows + DVC)
     fuente = Path(fuente)
     salida = Path(salida)
     salida.mkdir(parents=True, exist_ok=True)
