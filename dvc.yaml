@@ -9,3 +9,8 @@ stages:
     deps:
       - test/test_data_quality.py
       - data/raw/bank-additional-full.csv
+  test_data_gx:
+    cmd: pytest test/test_data_gx.py
+    deps:
+      - test/test_data_gx.py
+      - data/raw/bank-additional-full.csv

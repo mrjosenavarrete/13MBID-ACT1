@@ -1,0 +1,7 @@
+[OK] Esquema válido
+[WARN] El Dataframe contiene filas duplicadas
+assert np.int64(12) == 0
+ +  where np.int64(12) = sum()
+ +    where sum = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n41183    False\n41184    False\n41185    False\n41186    False\n41187    False\nLength: 41188, dtype: bool.sum
+ +      where 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n41183    False\n41184    False\n41185    False\n41186    False\n41187    False\nLength: 41188, dtype: bool = duplicated()
+ +        where duplicated =        age          job  marital  ... euribor3m nr.employed    y\n0       56    housemaid  married  ...     4.857      ...     1.028      4963.6  yes\n41187   74      retired  married  ...     1.028      4963.6   no\n\n[41188 rows x 21 columns].duplicated
