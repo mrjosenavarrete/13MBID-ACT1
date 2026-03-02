@@ -14,3 +14,8 @@ stages:
     deps:
       - test/test_data_gx.py
       - data/raw/bank-additional-full.csv
+  preprocess_data:
+    cmd: python src/data_preparation.py
+    deps:
+      - src/data_preparation.py
+      - data/raw/bank-additional-full.csv

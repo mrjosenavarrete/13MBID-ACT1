@@ -43,6 +43,6 @@ if __name__ == "__main__":
         f.write("- Se reemplazaron los valores 'unknown' por NaN\n")
         f.write("- Se eliminaron las filas con valores nulos\n")
         f.write("- Se eliminaron las filas duplicadas\n")
-        f.write("- Se eliminó la columna 'default' debido a la alta cantidad de valores nulos\n")
+        f.write("- Se elimino la columna 'default' debido a la alta cantidad de valores nulos\n")
         f.write(f"- Cantidad de filas finales: {dimensiones[0]}\n")
         f.write(f"- Cantidad de columnas finales: {dimensiones[1]}\n")

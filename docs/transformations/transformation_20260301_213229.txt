@@ -1,0 +1,8 @@
+Transformaciones realizadas - 20260301_213229
+----------------------------------------
+- Se reemplazaron los valores 'unknown' por NaN
+- Se eliminaron las filas con valores nulos
+- Se eliminaron las filas duplicadas
+- Se elimino la columna 'default' debido a la alta cantidad de valores nulos
+- Cantidad de filas finales: 38232
+- Cantidad de columnas finales: 20
