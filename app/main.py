@@ -71,22 +71,22 @@ model = None
 preprocessor = None
 
 if not os.path.exists(MODEL_PATH):
-    print(f"⚠️  ADVERTENCIA: No se encontró el modelo en {MODEL_PATH}")
+    print(f"ADVERTENCIA: No se encontró el modelo en {MODEL_PATH}")
 else:
     try:
         model = joblib.load(MODEL_PATH)
-        print(f"✅ Modelo cargado exitosamente desde {MODEL_PATH}")
+        print(f"Modelo cargado exitosamente desde {MODEL_PATH}")
     except Exception as e:
-        print(f"❌ Error al cargar el modelo: {e}")
+        print(f"Error al cargar el modelo: {e}")
 
 if not os.path.exists(PREPROCESSOR_PATH):
-    print(f"⚠️  ADVERTENCIA: No se encontró el preprocesador en {PREPROCESSOR_PATH}")
+    print(f"ADVERTENCIA: No se encontró el preprocesador en {PREPROCESSOR_PATH}")
 else:
     try:
         preprocessor = joblib.load(PREPROCESSOR_PATH)
-        print(f"✅ Preprocesador cargado exitosamente desde {PREPROCESSOR_PATH}")
+        print(f"Preprocesador cargado exitosamente desde {PREPROCESSOR_PATH}")
     except Exception as e:
-        print(f"❌ Error al cargar el preprocesador: {e}")
+        print(f"Error al cargar el preprocesador: {e}")
 
 @app.get("/")
 def root():
