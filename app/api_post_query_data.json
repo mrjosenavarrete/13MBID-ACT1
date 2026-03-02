@@ -1,0 +1,21 @@
+{
+  "age": 33,
+  "job": "admin.",
+  "marital": "single",
+  "education": "university.degree",
+  "housing": "no",
+  "loan": "no",
+  "contact": "cellular",
+  "month": "apr",
+  "day_of_week": "thu",
+  "duration": 268,
+  "campaign": 4,
+  "previous": 0,
+  "poutcome": "nonexistent",
+  "emp_var_rate": 1.8,
+  "cons_price_idx": 93.5,
+  "cons_conf_idx": -42.0,
+  "euribor3m": 4.5,
+  "nr_employed": 5100.0,
+  "contacted_before": "no"
+}
