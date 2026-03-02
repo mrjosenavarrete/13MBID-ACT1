@@ -27,8 +27,7 @@ def preprocess_data(input_path=INPUT_CSV, output_path=OUTPUT_CSV):
     # Transformaciones adicionales
 
     # 1. Codificar variable objetivo
-    df["target"] = df["y"].map({"yes": 1, "no": 0})
-    df.drop(columns=["y"], inplace=True)
+    df["y"] = df["y"].map({"yes": 1, "no": 0})
 
     # 2. Crear rangos de edad
     df["age_group"] = pd.cut(

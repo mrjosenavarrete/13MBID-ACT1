@@ -1,0 +1,11 @@
+Transformaciones realizadas - 20260301_231227
+--------------------------------------------------
+- Se reemplazaron los valores 'unknown' por NaN
+- Se eliminaron las filas con valores nulos
+- Se eliminararon filas duplicadas
+- Se eliminó la columna 'default' por alta proporción de valores faltantes
+- Se transformó la variable objetivo 'y' a formato binario ('target')
+- Se creó la variable derivada 'age_group' a partir de la edad
+- Se normalizaron las variables categóricas (lowercase y trim)
+- Cantidad de filas finales: 38232
+- Cantidad de columnas finales: 22
