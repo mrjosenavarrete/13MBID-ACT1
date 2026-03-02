@@ -24,3 +24,8 @@ stages:
     deps:
       - src/train_model.py
       - data/processed/bank-processed.csv
+  train_test:
+    cmd: pytest test/test_training.py
+    deps:
+      - test/test_training.py
+      - data/processed/bank-processed.csv

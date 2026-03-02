@@ -55,3 +55,14 @@ stages:
       hash: md5
       md5: 70acdcca6fc6b656447e5541c54bada8
       size: 9880
+  train_test:
+    cmd: pytest test/test_training.py
+    deps:
+    - path: data/processed/bank-processed.csv
+      hash: md5
+      md5: 8be1a447fe2602de78a4994a9f15e880
+      size: 4368118
+    - path: test/test_training.py
+      hash: md5
+      md5: 0a9978beee028f0f2e3284d01b2ddd49
+      size: 2731
