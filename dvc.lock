@@ -42,5 +42,16 @@ stages:
       size: 5834924
     - path: src/data_preparation.py
       hash: md5
-      md5: dfe274eb81463291132a297927ac839e
-      size: 2430
+      md5: 89826c8d15acb3e121e0e316f69a583c
+      size: 2623
+  train_model:
+    cmd: python src/train_model.py
+    deps:
+    - path: data/processed/bank-processed.csv
+      hash: md5
+      md5: 8be1a447fe2602de78a4994a9f15e880
+      size: 4368118
+    - path: src/train_model.py
+      hash: md5
+      md5: 70acdcca6fc6b656447e5541c54bada8
+      size: 9880

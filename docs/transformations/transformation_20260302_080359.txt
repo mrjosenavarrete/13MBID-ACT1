@@ -1,0 +1,11 @@
+Transformaciones realizadas - 20260302_080359
+--------------------------------------------------
+- Se reemplazaron los valores 'unknown' por NaN
+- Se eliminaron las filas con valores nulos
+- Se eliminararon filas duplicadas
+- Se eliminó la columna 'default' por alta proporción de valores faltantes
+- Se eliminó la columna 'pdays', porque fue reemplazada por 'contacted_before'
+- Se transformó la variable objetivo 'y' a formato binario ('target')
+- Se normalizaron las variables categóricas (lowercase y trim)
+- Cantidad de filas finales: 38232
+- Cantidad de columnas finales: 20
