@@ -42,5 +42,5 @@ stages:
       size: 5834924
     - path: src/data_preparation.py
       hash: md5
-      md5: 58cc7572071a63e87533854c64b59047
-      size: 1635
+      md5: dfe274eb81463291132a297927ac839e
+      size: 2430
