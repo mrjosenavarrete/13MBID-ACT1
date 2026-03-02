@@ -20,8 +20,8 @@ stages:
       size: 5834924
     - path: test/test_data_quality.py
       hash: md5
-      md5: 7e092cd3c32d023a2d7131885c5f291d
-      size: 2683
+      md5: fa0fe7be2417cc2f222f723a4aae11d1
+      size: 3817
   test_data_gx:
     cmd: pytest test/test_data_gx.py
     deps:

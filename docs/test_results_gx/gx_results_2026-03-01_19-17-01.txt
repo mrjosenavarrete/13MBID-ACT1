@@ -1,0 +1,15 @@
+RESULTADOS GREAT EXPECTATIONS (DATA QUALITY SOFT)
+=======================================================
+
+Fecha ejecución: 2026-03-01_19-17-01
+Expectativas totales: 5
+Expectativas exitosas: 4
+Resultado global: CON OBSERVACIONES
+
+Detalle de expectativas:
+------------------------------
+[FAIL] age_range → La columna 'age' no está en el rango esperado (18-100).
+[OK]  target_values
+[OK]  duration_positive
+[OK]  campaign_positive
+[OK]  pdays_valid

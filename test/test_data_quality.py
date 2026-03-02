@@ -83,4 +83,42 @@ def test_basico(datos_banco):
     except AssertionError as e:
         log(f"[ERROR] {e}")
 
+    # Verificación de tipo de datos numéricos
+    try:
+        expected_dtypes = {
+            "age": "int64",
+            "duration": "int64",
+            "campaign": "int64",
+            "pdays": "int64",
+            "previous": "int64",
+            "emp.var.rate": "float64",
+            "cons.price.idx": "float64",
+            "cons.conf.idx": "float64",
+            "euribor3m": "float64",
+            "nr.employed": "float64",
+        }
+
+        for col, dtype in expected_dtypes.items():
+            assert df[col].dtype == dtype, (
+                f"La columna '{col}' debería ser {dtype} "
+                f"y es {df[col].dtype}"
+            )
+    except AssertionError as e:
+        log(f"[ERROR] {e}")
+
+    # Verificación de columnas categóricas
+    try:
+        categorical_columns = [
+            "job", "marital", "education",
+            "default", "housing", "loan",
+            "contact", "month", "day_of_week", "poutcome"
+        ]
+
+        for col in categorical_columns:
+            assert df[col].dtype == object, (
+                f"La columna '{col}' debería ser categórica (object)"
+            )
+    except AssertionError as e:
+        log(f"[ERROR] {e}")
+
     assert True 
